@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <title>Mabsi Soy</title>
+    <style>
+        body {
+            font-family: 'Architects Daughter', cursive;
+        }
+    </style>
+</head>
+<body class="bg-orange-50">
+
+    <!-- Navigation Section -->
+    <section class="fixed w-full top-0 z-50 bg-orange-400">
+        <nav class="container mx-auto p-5 flex justify-between items-center">
+            <div class="flex items-center space-x-4 ">
+                <a href="#" class="text-gray-700 hover:text-gray-900 pr-6">HOME</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900 pr-6">SERVICES</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900 pr-6">ABOUT</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900">MENU</a>
+            </div>
+            <img class="w-20 rounded-full" src="/img/Mabsi Soy Logo.jpg" alt="Mabsi Soy Logo">
+            <div class="flex items-center space-x-4">
+                <a href="login.html"><button class="bg-white px-5 py-2 rounded-md">SIGN IN</button></a>
+                <a href="register.html"><button class="text-white bg-black px-5 py-2 rounded-md">SIGN UP</button></a>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="pt-36 text-center bg-cover bg-center" style="background-image: url('/img/bg\ home.jpg'); height: 500px;">
+        <h1 class="text-5xl text-red-500 font-bold mt-10">MABSI SOY</h1>
+        <p class="text-3xl text-red-600 mt-4">PEKA MANYAMAN SILOG KENI SASMUAN</p>
+        <div class="mt-8 space-x-4">
+            <button class="bg-black text-white px-6 py-3 rounded-md">ORDER NOW!</button>
+            <button class="bg-black text-white px-6 py-3 rounded-md">RESERVE NOW!</button>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="container mx-auto mt-10">
+        <h2 class="text-4xl text-red-500 text-center">MENU</h2>
+        <div class="flex justify-center space-x-8 mt-8">
+            <div class="bg-white shadow-lg rounded-lg ">
+                <img src="/img/menu_item1.jpg" alt="Overload Lugaw" class="w-80 h-96">
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="/img/menu_item.jpg" alt="Combo Sulit Sarap Meals" class="w-80 h-96">
+            </div>
+        </div>
+        <div class="text-center mt-8">
+            <button class="bg-black text-white px-6 py-3 rounded-md">SEE ALL MENU!</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-orange-400 mt-10 py-10">
+        <div class="container mx-auto text-center text-white">
+            <img class="w-12 rounded-full" src="/img/Mabsi Soy Logo.jpg" alt="">
+            <div class="flex justify-around">
+                <div>
+                    <a href="#" class="block">HOME</a>
+                    <a href="#" class="block mt-2">SERVICES</a>
+                    <a href="#" class="block mt-2">ABOUT</a>
+                    <a href="#" class="block mt-2">MENU</a>
+                </div>
+                <div class="max-w-xs">
+                    <p>Keni na mga soy takman yuna ing peka manyaman, mura, malinis at quality silog meals keni Sasmuan</p>
+                </div>
+                <div>
+                    <p>TELL US ABOUT MABSI SOY</p>
+                    <input type="text" class="mt-2 px-3 py-2 rounded-md" placeholder="Your feedback">
+                    <button class="bg-black text-white px-5 py-2 rounded-md mt-2">SEND NOW!</button>
+                </div>
+            </div>
+            <p class="mt-10">Copyright&copy; 2022 | MABSI SOY</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
